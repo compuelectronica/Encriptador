@@ -1,0 +1,447 @@
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #F3F5FC;
+    }
+    50% {
+        background-color: #d6dcf5bc;
+    }
+    100% {
+        background-color: #F3F5FC;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F5FC;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    animation: backgroundAnimation 5s infinite;
+}
+
+.bigContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoDiv {
+}
+
+.LogoImg {
+    
+}
+
+.input {
+    color: #0A3871;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff00;
+    font-size: 2.5vw;
+    position: relative;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #0A3871;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff00;
+}
+
+.ButtonsAndAlertDiv {
+    justify-self: flex-end;
+}
+
+.AlertDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ExclamationImg {
+   
+}
+
+.pLetterCases {
+    color:#868B92;
+}
+
+.ButtonsDiv {
+    display: flex;
+}
+
+.buttonEncrypt {
+    background-color: #0A3871;
+    border-radius: 20px;
+    border: 0.8px solid #0A3871;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttonDecrypt:hover {
+    background-color: #1b61b8;
+    color: white;
+}
+.buttonDecrypt {
+    background-color: #D8DFE8;
+    border-radius: 20px;
+    border: 0.8px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttonEncrypt:hover {
+    background-color: white;
+    color: #1b61b8;
+}
+.BigDivResult {
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #343A40;
+}
+
+.ImgNotFound {
+}
+
+.pNotFound {
+    color:#343A40;
+    font-weight: bold;
+    text-align:center;
+}
+
+.pEnterText {
+    color: #343A40;
+    text-align:center;
+}
+
+.buttonCopy {
+    background-color: #D8DFE8;
+    border-radius: 20px;
+    border: 0.8px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+    visibility: hidden;
+    transition: background-color 0.3s ease;
+}
+.buttonCopy:hover {
+    background-color: #1b61b8;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 7vw 5vw;
+        flex-direction: column;
+    }
+    
+    .bigContent {
+        width: 100%;
+        height: 75vh;
+    }
+    
+    .LogoDiv {
+        width: 100%;
+    }
+    
+    .LogoImg {
+        width: 16vw;
+        height: 5vw;
+    }
+    
+    .input {
+        font-size: 4vw;
+        width: 45vw;
+        position: relative;
+        bottom: 25vw;
+        right: 15vw;
+    }
+    .input::placeholder {
+        font-size: 4vw;
+    }
+    
+    .ButtonsAndAlertDiv {
+    }
+    
+    .AlertDiv {
+        
+    }
+    
+    .ExclamationImg {
+       width: 3vw;
+       height: 3vw;
+       margin-right: 1vw;
+    }
+    
+    .pLetterCases {
+        font-size: 2.8vw;
+    }
+    
+    .ButtonsDiv {
+        gap: 3vw;
+    }
+    
+    .buttonEncrypt {
+        padding: 3vw 5vw;
+        width: 40vw;
+        font-size: 3vw;
+    }
+    .buttonDecrypt:hover {
+        
+    }
+    .buttonDecrypt {
+        padding: 3vw 5vw;
+        width: 40vw;
+        font-size: 3vw;
+    }
+    .buttonEncrypt:hover {
+        
+    }
+    .BigDivResult {
+        width: 95%;
+        height: 15vh;
+        padding: 2vw 2vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .result {
+        font-size: 5vw;
+    }
+    
+    .ImgNotFound {
+        width: 20vw;
+        display: none;
+    }
+    
+    .pNotFound {
+        font-size: 4.5vw;
+        margin-bottom: -0.6vw;
+    }
+    
+    .pEnterText {
+        font-size: 2.5vw;
+    }
+    
+    .buttonCopy {
+        padding: 2vw 5vw;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .buttonCopy:hover {
+
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 5vw;
+        flex-direction: column;
+    }
+    
+    .bigContent {
+        width: 100%;
+        height: 75vh;
+    }
+    
+    .LogoDiv {
+        width: 100%;
+    }
+    
+    .LogoImg {
+        width: 16vw;
+        height: 5vw;
+    }
+    
+    .input {
+        font-size: 4vw;
+        width: 45vw;
+        position: relative;
+        bottom: 25vw;
+        right: 15vw;
+    }
+    .input::placeholder {
+        font-size: 4vw;
+    }
+    
+    .ButtonsAndAlertDiv {
+    }
+    
+    .AlertDiv {
+        
+    }
+    
+    .ExclamationImg {
+       width: 3vw;
+       height: 3vw;
+       margin-right: 1vw;
+    }
+    
+    .pLetterCases {
+        font-size: 2.8vw;
+    }
+    
+    .ButtonsDiv {
+        gap: 3vw;
+    }
+    
+    .buttonEncrypt {
+        padding: 3vw 5vw;
+        width: 40vw;
+        font-size: 3vw;
+    }
+    .buttonDecrypt:hover {
+        
+    }
+    .buttonDecrypt {
+        padding: 3vw 5vw;
+        width: 40vw;
+        font-size: 3vw;
+    }
+    .buttonEncrypt:hover {
+        
+    }
+    .BigDivResult {
+        width: 95%;
+        height: 15vh;
+        padding: 2vw 2vw;
+        margin-top: 2vw;
+    }
+    
+    .result {
+        font-size: 5vw;
+    }
+    
+    .ImgNotFound {
+        width: 20vw;
+        display: none;
+    }
+    
+    .pNotFound {
+        font-size: 4.5vw;
+        margin-bottom: -0.6vw;
+    }
+    
+    .pEnterText {
+        font-size: 2.5vw;
+    }
+    
+    .buttonCopy {
+        padding: 2vw 5vw;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .buttonCopy:hover {
+
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding: 3vw;
+    }
+    
+    .bigContent {
+        width: 80%;
+        height: 88vh;
+    }
+    
+    .LogoDiv {
+        width: 100%;
+    }
+    
+    .LogoImg {
+        width: 10vw;
+        height: 3.6vw;
+    }
+    
+    .input {
+        font-size: 2.5vw;
+        width: 30vw;
+        position: relative;
+        bottom: 15vw;
+    }
+    .input::placeholder {
+        font-size: 2.5vw;
+    }
+    
+    .ButtonsAndAlertDiv {
+    }
+    
+    .AlertDiv {
+        
+    }
+    
+    .ExclamationImg {
+       width: 1vw;
+       height: 1vw;
+       margin-right: 0.3vw;
+    }
+    
+    .pLetterCases {
+        font-size: 0.96vw;
+    }
+    
+    .ButtonsDiv {
+        gap: 1.6vw;
+    }
+    
+    .buttonEncrypt {
+        padding: 1vw 5vw;
+        width: 17vw;
+    }
+    .buttonDecrypt:hover {
+        
+    }
+    .buttonDecrypt {
+        padding: 1vw 5vw;
+        width: 17vw;
+    }
+    .buttonEncrypt:hover {
+        
+    }
+    .BigDivResult {
+        width: 35%;
+        height: 87vh;
+        position: relative;
+        bottom: 3vh;
+        padding: 2vw 2vw;
+    }
+    
+    .result {
+        
+        font-size: 1.7vw;
+    }
+    
+    .ImgNotFound {
+        width: 20vw;
+    }
+    
+    .pNotFound {
+        font-size: 2vw;
+        margin-bottom: -0.3vw;
+    }
+    
+    .pEnterText {
+        font-size: 1.2vw;
+    }
+    
+    .buttonCopy {
+        padding: 1vw 5vw;
+        width: 17vw;
+    }
+    .buttonCopy:hover {
+
+    }
+}
