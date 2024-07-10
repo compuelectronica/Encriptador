@@ -163,6 +163,7 @@ body {
     .input {
         font-size: 4vw;
         width: 45vw;
+        height: 30vw;
         position: relative;
         bottom: 25vw;
         right: 15vw;
@@ -267,6 +268,7 @@ body {
     .input {
         font-size: 4vw;
         width: 45vw;
+        height: 30vw;
         position: relative;
         bottom: 25vw;
         right: 15vw;
@@ -369,6 +371,7 @@ body {
     .input {
         font-size: 2.5vw;
         width: 30vw;
+        height: 30vw;
         position: relative;
         bottom: 15vw;
     }
